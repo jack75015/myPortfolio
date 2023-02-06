@@ -9,14 +9,14 @@ export const projectsData: CardProjectType[] = [
     title: "Paris Blockchain Society",
     date: "2023",
     link: "https://www.linkedin.com/company/paris-blockchain-society/",
-    imagePath: "/images/projects/pbs.jpg",
+    imagePath: "myPortfolio/images/projects/pbs.jpg",
     descriptions: ["Smart contract ETH", "NFT génération"],
   },
   {
     title: "Pantheon Business Club",
     date: "2022",
     link: "https://www.pantheonbusinessclub.com/",
-    imagePath: "/images/projects/pbc.jpg",
+    imagePath: "myPortfolio/images/projects/pbc.jpg",
     descriptions: [
       "Interface Web Bubble + intégration web3",
       "Mint page",
@@ -28,14 +28,14 @@ export const projectsData: CardProjectType[] = [
     title: "Wecreatures",
     date: "2022",
     link: "https://www.wecreatures.com/",
-    imagePath: "/images/projects/wecreatures.jpg",
+    imagePath: "myPortfolio/images/projects/wecreatures.jpg",
     descriptions: ["Smart contract EVM", "Mint page Wix"],
   },
   {
     title: "Furious Alpha Gym Club",
     date: "2021",
     link: "https://furiousalphagymclub.com/",
-    imagePath: "/images/projects/fagc.jpg",
+    imagePath: "myPortfolio/images/projects/fagc.jpg",
     descriptions: [
       "Interface Web React",
       "Mint page",
@@ -47,7 +47,7 @@ export const projectsData: CardProjectType[] = [
     title: "The Mona Lana",
     date: "2021",
     link: "https://opensea.io/collection/themonalana",
-    imagePath: "/images/projects/themonalana.jpg",
+    imagePath: "myPortfolio/images/projects/themonalana.jpg",
     descriptions: ["NFT génération"],
   },
 ];
@@ -58,7 +58,7 @@ export const experiencesData: ExperienceType[] = [
     job: "Blockchain Senior Developer",
     date: "2020 - 2023",
     link: "https://www.neofacto.com/",
-    imagePath: "/images/experiences/neofacto.jpg",
+    imagePath: "myPortfolio/images/experiences/neofacto.jpg",
     missions: [
       {
         title: "Ministère des transports du Luxembourg",
@@ -91,7 +91,7 @@ export const experiencesData: ExperienceType[] = [
     date: "2022 - 2023",
     job: "Professor Workshop Blockchain",
     link: "https://www.ece.fr/",
-    imagePath: "/images/experiences/ece.jpg",
+    imagePath: "myPortfolio/images/experiences/ece.jpg",
     missions: [
       {
         title: "Professeur Master OCRES Workshop Blockchain",
@@ -105,7 +105,7 @@ export const experiencesData: ExperienceType[] = [
     date: "2018 - 2020",
     job: "Blockchain Junior Developer",
     link: "https://www.soprasteria.fr/",
-    imagePath: "/images/experiences/soprasteria.jpg",
+    imagePath: "myPortfolio/images/experiences/soprasteria.jpg",
     missions: [
       {
         title: "Projet EasyId",
@@ -128,31 +128,31 @@ export const experiencesData: ExperienceType[] = [
 
 export const skillsData: SkillType[] = [
   {
-    image: "/images/skills/eth.png",
+    image: "myPortfolio/images/skills/eth.png",
     description:
       "Smart contracts Ethereum (ERC-721/ERC-20/ERC-1155/..), Dapps.",
   },
   {
-    image: "/images/skills/tezos.png",
+    image: "myPortfolio/images/skills/tezos.png",
     description:
       "Smart contracts Tezos (FA2/TZIP-012/TZIP-016/TZIP-021/..), Dapps.",
   },
   {
-    image: "/images/skills/blockchain.png",
+    image: "myPortfolio/images/skills/blockchain.png",
     description:
       "Gestion des données via IPFS, y compris la génération d'images et des metadata",
   },
   {
-    image: "/images/skills/react.png",
+    image: "myPortfolio/images/skills/react.png",
     description:
       "Application Web Front end (ReactJS) + Back end (NestJS, NodeJS",
   },
   {
-    image: "/images/skills/aws.png",
+    image: "myPortfolio/images/skills/aws.png",
     description: "Déploiement et hébergement d'applications",
   },
   {
-    image: "/images/skills/code.png",
+    image: "myPortfolio/images/skills/code.png",
     description:
       "Code orienté qualité/sécurité avec les dernières best practices",
   },
@@ -160,15 +160,15 @@ export const skillsData: SkillType[] = [
 
 export const hobbiesData: SkillType[] = [
   {
-    image: "/images/hobbies/judo.png",
+    image: "myPortfolio/images/hobbies/judo.png",
     description: "Judo",
   },
   {
-    image: "/images/hobbies/cook.png",
+    image: "myPortfolio/images/hobbies/cook.png",
     description: "Cuisine",
   },
   {
-    image: "/images/hobbies/chess.png",
+    image: "myPortfolio/images/hobbies/chess.png",
     description: "Echecs",
   },
 ];

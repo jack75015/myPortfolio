@@ -2,6 +2,7 @@
   "name": "my_portfolio",
   "author": "Jacques WEBER",
   "version": "0.1.0",
+  "homepage": "http://jack75015.github.io/myPortfolio",
   "private": true,
   "dependencies": {
     "@emotion/react": "^11.10.5",

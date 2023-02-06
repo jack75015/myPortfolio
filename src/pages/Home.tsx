@@ -4,7 +4,7 @@ import { homeData } from "../utils/data";
 
 export default function Home() {
   return (
-    <Container sx={{ height: "100vh" }} component="main" maxWidth="lg">
+    <Container sx={{ minHeight: "100vh" }} component="main" maxWidth="lg">
       <Grid
         container
         alignItems="center"

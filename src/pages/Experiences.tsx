@@ -10,6 +10,8 @@ interface TabPanelProps {
 }
 
 export default function Experiences() {
+  const smallScreen = useMediaQuery("(max-width: 768px)");
+
   const a11yProps = (index: number) => {
     return {
       id: `vertical-tab-${index}`,
@@ -67,19 +69,20 @@ export default function Experiences() {
   const generateTabLabel = (experience: ExperienceType): any => (
     <>
       <Grid container alignItems="center" spacing={1}>
-        <Grid item xs={6}>
+        <Grid item xs={!smallScreen ?? 6}>
           <img src={experience.imagePath} />
         </Grid>
-        <Grid item xs={6}>
-          <Typography variant="h6" color="white">
-            {experience.title}
-          </Typography>
-        </Grid>
+        {!smallScreen ? (
+          <Grid item xs={6}>
+            <Typography variant="h6" color="white">
+              {experience.title}
+            </Typography>
+          </Grid>
+        ) : null}
       </Grid>
     </>
   );
 
-  const smallScreen = useMediaQuery("(max-width: 768px)");
   return (
     <Container sx={{ minHeight: "70vh" }} component="main" maxWidth="lg">
       <Grid container spacing={2}>

@@ -1,4 +1,4 @@
-import { Button, Grid } from "@mui/material";
+import { Button, Grid, Link } from "@mui/material";
 import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
@@ -40,6 +40,9 @@ export default function Contacts() {
       </Grid>
       <Grid item xs={12}>
         Made with ❤️ in Paris 🇫🇷
+      </Grid>
+      <Grid item xs={12}>
+        <Link href="https://github.com/jack75015/myPortfolio">Code</Link>
       </Grid>
     </Grid>
   );

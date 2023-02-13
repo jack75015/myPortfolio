@@ -9,8 +9,14 @@ code {
     monospace;
 }
 
-.MuiPaper-root {
-  background-color: "lightblue";
+.progress-bar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 4px;
+  background: white;
+  transform-origin: 0%;
 }
 
 @import url("https://fonts.googleapis.com/css2?family=IBM+Plex+Sans+Arabic:wght@400;600&display=swap");

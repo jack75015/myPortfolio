@@ -11,6 +11,7 @@ import Hobbies from "./pages/Hobbies";
 import { useState } from "react";
 import LanguageContext from "./containers/Languages";
 import { Language } from "./utils/types";
+import ProgressBar from "./components/ProgressBar";
 
 function App() {
   const [language, setLanguage] = useState<string>(Language.FR);
@@ -43,6 +44,7 @@ function App() {
     <ThemeProvider theme={themeDark}>
       <LanguageContext.Provider value={{ language, setLanguage }}>
         <CssBaseline />
+        <ProgressBar />
         <Header />
         <Home />
         <Divider title={"experiences"} />

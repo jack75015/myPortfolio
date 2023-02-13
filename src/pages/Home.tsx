@@ -1,8 +1,9 @@
 import { Container, Grid, Typography } from "@mui/material";
 import { motion } from "framer-motion";
-import { homeData } from "../utils/data";
+import { useData } from "../hooks/useData";
 
 export default function Home() {
+  const data = useData();
   return (
     <Container sx={{ minHeight: "100vh" }} component="main" maxWidth="lg">
       <Grid
@@ -12,7 +13,7 @@ export default function Home() {
         style={{ minHeight: "100vh" }}
       >
         <Grid item>
-          {homeData.map((data, index) => (
+          {data.homeData.map((data, index) => (
             <motion.p
               initial={{ y: 100, x: 50, opacity: 0, scale: 0 }}
               animate={{ y: 0, x: 0, opacity: 1, scale: 1 }}

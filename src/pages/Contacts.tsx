@@ -3,7 +3,7 @@ import TwitterIcon from "@mui/icons-material/Twitter";
 import LinkedInIcon from "@mui/icons-material/LinkedIn";
 import GitHubIcon from "@mui/icons-material/GitHub";
 import { onClickHandler } from "../utils/utils";
-import { githubLink, linkedinLink, twitterLink } from "../utils/data";
+import { githubLink, linkedinLink, twitterLink } from "../hooks/useData";
 
 export default function Contacts() {
   return (

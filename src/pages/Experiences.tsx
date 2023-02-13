@@ -1,6 +1,6 @@
 import { Box, Container, Grid, Tab, Tabs, Typography } from "@mui/material";
 import React from "react";
-import { experiencesData } from "../utils/data";
+import { useData } from "../hooks/useData";
 import { ExperienceType } from "../utils/types";
 import useMediaQuery from "@mui/material/useMediaQuery";
 interface TabPanelProps {
@@ -11,6 +11,7 @@ interface TabPanelProps {
 
 export default function Experiences() {
   const smallScreen = useMediaQuery("(max-width: 768px)");
+  const data = useData();
 
   const a11yProps = (index: number) => {
     return {
@@ -70,7 +71,7 @@ export default function Experiences() {
     <>
       <Grid container alignItems="center" spacing={1}>
         <Grid item xs={!smallScreen ?? 6}>
-          <img src={experience.imagePath} />
+          <img alt="" src={experience.imagePath} />
         </Grid>
         {!smallScreen ? (
           <Grid item xs={6}>
@@ -97,14 +98,14 @@ export default function Experiences() {
               justifyContent: "flex-start",
             }}
           >
-            {experiencesData.map((experience, index) => (
+            {data.experiencesData.map((experience, index) => (
               <Tab label={generateTabLabel(experience)} {...a11yProps(index)} />
             ))}
           </Tabs>
         </Grid>
 
         <Grid item xs={!smallScreen ?? 9}>
-          {experiencesData.map((experience, index) => (
+          {data.experiencesData.map((experience, index) => (
             <TabPanel value={value} index={index} experience={experience} />
           ))}
         </Grid>

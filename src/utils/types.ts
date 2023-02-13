@@ -33,3 +33,26 @@ export type DividerType = {
 export type SectionType = {
   children: JSX.Element;
 };
+
+export type DataType = {
+  homeData: string[];
+  projectsData: CardProjectType[];
+  experiencesData: ExperienceType[];
+  skillsData: SkillType[];
+  hobbiesData: SkillType[];
+  divider: any;
+};
+
+export type DataTranslationType = {
+  projectsDataDescription: any;
+  experiencesDataMissionsDescription: any;
+  hobbiesData: any;
+  homeData: string[];
+  skillsDataDescription: any;
+  divider: any;
+};
+
+export const enum Language {
+  FR = "FR",
+  EN = "EN",
+}

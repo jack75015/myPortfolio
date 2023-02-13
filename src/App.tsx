@@ -8,7 +8,13 @@ import Experiences from "./pages/Experiences";
 import Skills from "./pages/Skills";
 import Section from "./components/Section";
 import Hobbies from "./pages/Hobbies";
+import { useState } from "react";
+import LanguageContext from "./containers/Languages";
+import { Language } from "./utils/types";
+
 function App() {
+  const [language, setLanguage] = useState<string>(Language.FR);
+
   const themeDark = createTheme({
     typography: {
       fontFamily: ["IBM Plex Sans Arabic"].join(","),
@@ -35,19 +41,21 @@ function App() {
 
   return (
     <ThemeProvider theme={themeDark}>
-      <CssBaseline />
-      {/* <Header /> */}
-      <Home />
-      <Divider title={"Expériences"} />
-      <Section children={<Experiences />} />
-      <Divider title={"Compétences"} />
-      <Section children={<Skills />} />
-      <Divider title={"Projets"} />
-      <Section children={<Projects />} />
-      <Divider title={"Activités"} />
-      <Section children={<Hobbies />} />
-      <Divider />
-      <Section children={<Contacts />} />
+      <LanguageContext.Provider value={{ language, setLanguage }}>
+        <CssBaseline />
+        <Header />
+        <Home />
+        <Divider title={"experiences"} />
+        <Section children={<Experiences />} />
+        <Divider title={"skills"} />
+        <Section children={<Skills />} />
+        <Divider title={"projects"} />
+        <Section children={<Projects />} />
+        <Divider title={"hobbies"} />
+        <Section children={<Hobbies />} />
+        <Divider />
+        <Section children={<Contacts />} />
+      </LanguageContext.Provider>
     </ThemeProvider>
   );
 }

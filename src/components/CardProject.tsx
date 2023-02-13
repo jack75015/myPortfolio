@@ -40,6 +40,7 @@ export default function CardProject(props: CardProjectType) {
             borderRadius: "30px",
             cursor: "pointer",
           }}
+          alt=""
           src={imagePath}
           onClick={() => onClickHandler(link)}
         />

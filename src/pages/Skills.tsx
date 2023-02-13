@@ -1,8 +1,9 @@
 import { Container, Grid } from "@mui/material";
 import Skill from "../components/Skill";
-import { skillsData } from "../utils/data";
+import { useData } from "../hooks/useData";
 
 export default function Skills() {
+  const data = useData();
   return (
     <Container sx={{ minHeight: "50vh" }} component="main" maxWidth="lg">
       <Grid
@@ -11,7 +12,7 @@ export default function Skills() {
         sx={{ textAlign: "center" }}
         spacing={5}
       >
-        {skillsData.map(({ image, description }) => (
+        {data.skillsData.map(({ image, description }) => (
           <Grid item lg={4} pr={1}>
             <Skill image={image} description={description} />
           </Grid>

@@ -7,7 +7,7 @@ export default function Skill(props: SkillType) {
   return (
     <Grid container direction="column" alignItems="center" spacing={1}>
       <Grid item xs={6} sx={{ filter: "invert(1)" }}>
-        <img src={image} />
+        <img alt="" src={image} />
       </Grid>
       <Grid item xs={6}>
         <Typography variant="h6" color="white">

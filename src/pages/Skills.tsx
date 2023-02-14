@@ -12,8 +12,8 @@ export default function Skills() {
         sx={{ textAlign: "center" }}
         spacing={5}
       >
-        {data.skillsData.map(({ image, description }) => (
-          <Grid item lg={4} pr={1}>
+        {data.skillsData.map(({ image, description }, index) => (
+          <Grid key={index} item lg={4} pr={1}>
             <Skill image={image} description={description} />
           </Grid>
         ))}

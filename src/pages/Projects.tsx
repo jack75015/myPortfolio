@@ -13,8 +13,8 @@ export default function Projects() {
         spacing={5}
       >
         {data.projectsData.map(
-          ({ title, link, imagePath, descriptions, date }) => (
-            <Grid item lg={4} pr={1}>
+          ({ title, link, imagePath, descriptions, date }, index) => (
+            <Grid key={index} item lg={4} pr={1}>
               <CardProject
                 title={title}
                 link={link}

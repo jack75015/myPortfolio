@@ -29,6 +29,7 @@ export default function Experiences() {
         hidden={value !== index}
         id={`vertical-tabpanel-${index}`}
         aria-labelledby={`vertical-tab-${index}`}
+        key={index}
         {...other}
       >
         {value === index && (
@@ -37,21 +38,19 @@ export default function Experiences() {
             <Typography variant="h6">{experience.date}</Typography>
             <Typography variant="body1" color="text.primary">
               <ul>
-                {experience.missions.map((mission) => (
-                  <>
-                    <li style={{ marginBottom: "30px" }}>
-                      <Typography
-                        sx={{ textDecoration: "underline" }}
-                        variant="body1"
-                      >
-                        {mission.title}{" "}
-                        {mission.date ? `(${mission.date})` : null}
-                      </Typography>
-                      <Typography variant="body1">
-                        {mission.description}
-                      </Typography>
-                    </li>
-                  </>
+                {experience.missions.map((mission, index2) => (
+                  <li key={index2} style={{ marginBottom: "30px" }}>
+                    <Typography
+                      sx={{ textDecoration: "underline" }}
+                      variant="body1"
+                    >
+                      {mission.title}{" "}
+                      {mission.date ? `(${mission.date})` : null}
+                    </Typography>
+                    <Typography variant="body1">
+                      {mission.description}
+                    </Typography>
+                  </li>
                 ))}
               </ul>
             </Typography>
@@ -99,14 +98,23 @@ export default function Experiences() {
             }}
           >
             {data.experiencesData.map((experience, index) => (
-              <Tab label={generateTabLabel(experience)} {...a11yProps(index)} />
+              <Tab
+                key={index}
+                label={generateTabLabel(experience)}
+                {...a11yProps(index)}
+              />
             ))}
           </Tabs>
         </Grid>
 
         <Grid item xs={!smallScreen ?? 9}>
           {data.experiencesData.map((experience, index) => (
-            <TabPanel value={value} index={index} experience={experience} />
+            <TabPanel
+              key={index}
+              value={value}
+              index={index}
+              experience={experience}
+            />
           ))}
         </Grid>
       </Grid>

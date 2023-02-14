@@ -18,6 +18,7 @@ export default function Home() {
               initial={{ y: 100, x: 50, opacity: 0, scale: 0 }}
               animate={{ y: 0, x: 0, opacity: 1, scale: 1 }}
               transition={{ duration: 1, type: "tween", delay: index }}
+              key={index}
             >
               <Typography
                 align="center"

@@ -47,8 +47,8 @@ export default function CardProject(props: CardProjectType) {
       </CardContent>
 
       <CardContent>
-        {descriptions.map((description) => (
-          <Typography variant="body2" color="text.primary">
+        {descriptions.map((description, index) => (
+          <Typography key={index} variant="body2" color="text.primary">
             {description}
           </Typography>
         ))}

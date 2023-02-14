@@ -21,8 +21,8 @@ export default function LanguageSwitcher() {
 
   return (
     <Grid container spacing={1}>
-      {options.map((option) => (
-        <Grid item xs={6}>
+      {options.map((option, index) => (
+        <Grid item key={index} xs={6}>
           <Typography
             onClick={() => setLanguage(option.key)}
             variant="h5"

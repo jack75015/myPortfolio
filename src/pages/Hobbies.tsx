@@ -13,8 +13,8 @@ export default function Hobbies() {
         sx={{ textAlign: "center" }}
         spacing={5}
       >
-        {data.hobbiesData.map(({ image, description }) => (
-          <Grid item lg={4} pr={1}>
+        {data.hobbiesData.map(({ image, description }, index) => (
+          <Grid item key={index} lg={4} pr={1}>
             <Skill image={image} description={description} />
           </Grid>
         ))}

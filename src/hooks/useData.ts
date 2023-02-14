@@ -176,7 +176,6 @@ export const data = (dataTranslation: DataTranslationType): DataType => {
 
 export const useData = (): DataType => {
   const { language } = useContext(LanguageContext);
-  console.log(language);
 
   switch (language) {
     case Language.FR:

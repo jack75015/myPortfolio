@@ -21,7 +21,9 @@ export default function Home() {
               key={index}
             >
               <Typography
+                component="span"
                 align="center"
+                display="block"
                 variant={index === 0 ? "h2" : "h4"}
                 fontWeight={index === 0 ? "600" : "inherit"}
               >

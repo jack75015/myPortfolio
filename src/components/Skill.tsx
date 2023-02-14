@@ -10,7 +10,7 @@ export default function Skill(props: SkillType) {
         <img alt="" src={image} />
       </Grid>
       <Grid item xs={6}>
-        <Typography variant="h6" color="white">
+        <Typography component="span" variant="h6" color="white">
           {description}
         </Typography>
       </Grid>

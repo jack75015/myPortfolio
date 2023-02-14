@@ -34,15 +34,25 @@ export default function Experiences() {
       >
         {value === index && (
           <Box sx={{ p: 3 }}>
-            <Typography variant="h4">{experience.job}</Typography>
-            <Typography variant="h6">{experience.date}</Typography>
-            <Typography variant="body1" color="text.primary">
+            <Typography component="span" variant="h4">
+              {experience.job}
+            </Typography>
+            <Typography display="block" component="span" variant="h6">
+              {experience.date}
+            </Typography>
+            <Typography
+              display="block"
+              component="span"
+              variant="body1"
+              color="text.primary"
+            >
               <ul>
                 {experience.missions.map((mission, index2) => (
                   <li key={index2} style={{ marginBottom: "30px" }}>
                     <Typography
                       sx={{ textDecoration: "underline" }}
                       variant="body1"
+                      display="block"
                     >
                       {mission.title}{" "}
                       {mission.date ? `(${mission.date})` : null}
@@ -74,7 +84,7 @@ export default function Experiences() {
         </Grid>
         {!smallScreen ? (
           <Grid item xs={6}>
-            <Typography variant="h6" color="white">
+            <Typography component="span" variant="h6" color="white">
               {experience.title}
             </Typography>
           </Grid>

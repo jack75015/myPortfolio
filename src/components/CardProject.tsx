@@ -20,10 +20,16 @@ export default function CardProject(props: CardProjectType) {
         color="text.primary"
         title={
           <>
-            <Typography variant="h5" color="text.primary">
+            <Typography component="span" variant="h5" color="text.primary">
               {title}
             </Typography>
-            <Typography variant="h6" color="text.primary">
+            <Typography
+              display="block"
+              align="center"
+              component="span"
+              variant="h6"
+              color="text.primary"
+            >
               {date}
             </Typography>
           </>
@@ -48,7 +54,14 @@ export default function CardProject(props: CardProjectType) {
 
       <CardContent>
         {descriptions.map((description, index) => (
-          <Typography key={index} variant="body2" color="text.primary">
+          <Typography
+            component="span"
+            display="block"
+            align="center"
+            key={index}
+            variant="body2"
+            color="text.primary"
+          >
             {description}
           </Typography>
         ))}

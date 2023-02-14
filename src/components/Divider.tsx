@@ -8,7 +8,12 @@ export default function Divider(props: DividerType) {
   return (
     <MUIDivider sx={{ margin: "5%", fontSize: "large" }} variant="middle">
       {title ? (
-        <Typography variant="h4" color="text.primary" fontWeight="600">
+        <Typography
+          component="span"
+          variant="h4"
+          color="text.primary"
+          fontWeight="600"
+        >
           {data.divider[title]}
         </Typography>
       ) : null}

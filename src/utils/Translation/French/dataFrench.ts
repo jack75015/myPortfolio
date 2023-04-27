@@ -19,6 +19,9 @@ const projectsDataDescription = {
 };
 
 const experiencesDataMissionsDescription = {
+  Scorechain:
+    "Developpement d’une nouvelle feature de gestion de risk scenario sur l’application de monitoring de scorechain. Optimisation de components / résolutions de problèmes techniques / clean code pour la mise en production",
+
   "Ministère des transports du Luxembourg":
     "Réflexion et mise en place d'un POC pour digitaliser un système de gestion des cartes de conduite de marchandises dangereuses pour le Ministère des Transports luxembourgeois. Une approche sans et avec blockchain (ETH) a été présentée. Front-End en React / Gestion des données via Hasura / Développement back-end de packages NestJS",
 

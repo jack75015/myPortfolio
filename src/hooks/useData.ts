@@ -59,8 +59,14 @@ export const data = (dataTranslation: DataTranslationType): DataType => {
         imagePath: "images/experiences/neofacto.jpg",
         missions: [
           {
-            title: "Ministère des transports du Luxembourg",
+            title: "Scorechain",
             date: "2023",
+            description:
+              dataTranslation.experiencesDataMissionsDescription["Scorechain"],
+          },
+          {
+            title: "Ministère des transports du Luxembourg",
+            date: "2022 / 2023",
             description:
               dataTranslation.experiencesDataMissionsDescription[
                 "Ministère des transports du Luxembourg"
